@@ -68,7 +68,7 @@ import convertRoutes from "./src/routes/convert.routes.js"; // Assuming you have
 import splitPdfRoutes from "./src/routes/splitPDF.routes.js"; // Your new split PDF routes
 import compressPdfRoutes from "./src/routes/compressPDF.routes.js"
 import wordToPDFRoutes from "./src/routes/wordToPDF.routes.js";
-import pdfToWordRoutes from "./src/routes/pdfToWord.routes.js";
+// import pdfToWordRoutes from "./src/routes/pdfToWord.routes.js";
 import pdfToImagesRoutes from "./src/routes/pdfToImages.routes.js";
 import compressImage from "./src/routes/compressImage.routes.js";
 import pngToJPGRoutes from "./src/routes/pngToJPG.routes.js";
@@ -85,7 +85,7 @@ app.use("/api/convert", convertRoutes); // For other conversion routes
 app.use("/api", splitPdfRoutes); // For PDF splitting routes
 app.use("/api", compressPdfRoutes); // For PDF Compressing routes
 app.use("/api", wordToPDFRoutes);
-app.use("/api", pdfToWordRoutes);
+// app.use("/api", pdfToWordRoutes);
 app.use("/api", pdfToImagesRoutes);
 app.use("/api", compressImage);
 app.use("/api", pngToJPGRoutes);
